@@ -1,0 +1,244 @@
+/* Cài đặt chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+header h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #000000;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Phần Giới Thiệu */
+.intro {
+    display: flex;
+    justify-content: flex;
+    padding: 50px;
+    background-color: #000000;
+}
+
+.intro-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.intro-text {
+    margin-left: 70px;
+    margin-top: 50px; /* Tăng khoảng cách phía trên */
+    margin-bottom: 50px; /* Tăng khoảng cách phía dưới */
+    max-width: 800px;
+}
+
+.intro-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.intro-text p {
+    color: #ffffff; /* Thiết lập màu trắng cho đoạn văn */
+}
+
+/* Phần Tiêu đề và Soul Sisters */
+.my-why, .soul-sisters, .favorites {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.my-why h3, .soul-sisters h3, .favorites h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.soul-sisters ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.soul-sisters li {
+    padding: 10px;
+    color: #333;
+}
+
+/* Phần Sở Thích */
+.favorites-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.favorite-item {
+    width: 30%;
+    text-align: center;
+}
+
+.favorite-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.favorite-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.favorite-item p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Phần Kinh nghiệm */
+.main-context {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.main-context h1 {
+    font-size:2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Phần logo cho Kinh nghiệm */
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề phần Liên hệ */
+.main-content h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Bố cục phần Liên hệ */
+footer {
+    background-color: #ffffff;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dạng bảng 2 cột */
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Phần thông tin liên hệ */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ddd; /* Đường chia bảng */
+    padding-right: 20px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1em;
+    color: #555;
+    margin: 8px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000000;
+}
+
+/* Phần form liên hệ */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #000000;
+}
